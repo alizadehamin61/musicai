@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استودیو هوش مصنوعی - موزیک و کلیپ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🎵</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">استودیو هوش مصنوعی</h1>
+                        <p class="text-sm opacity-90">موزیک و کلیپ در یک دقیقه</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6 space-x-reverse">
+                    <a href="#services" class="hover:text-yellow-300 transition-colors">خدمات</a>
+                    <a href="#samples" class="hover:text-yellow-300 transition-colors">نمونه کارها</a>
+                    <a href="#contact" class="hover:text-yellow-300 transition-colors">تماس</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="floating">
+                <h2 class="text-5xl font-bold mb-6">ترانه و کلیپ یک دقیقه‌ای رویایی‌تان را بسازید!</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                    با قدرت هوش مصنوعی، ترانه‌ها و کلیپ‌های یک دقیقه‌ای منحصربه‌فرد برای تبلیغات، تولد، ابراز عشق و مهدکودک بسازید
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all pulse-animation">
+                    🚀 همین الان سفارش دهید
+                </a>
+                <a href="#samples" class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all">
+                    🎧 نمونه کارها را ببینید
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">خدمات ما</h3>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card-hover bg-gradient-to-br from-purple-100 to-purple-200 p-8 rounded-2xl text-center">
+                    <div class="text-5xl mb-4">🎵</div>
+                    <h4 class="text-2xl font-bold mb-3 text-gray-800">ترانه + موزیک با خواننده</h4>
+                    <p class="text-gray-600 mb-4">سرودن ترانه و ساخت موزیک یک دقیقه‌ای با صدای خواننده حرفه‌ای</p>
+                    <div class="text-3xl font-bold text-purple-600 mb-2">۷۵۰,۰۰۰ تومان</div>
+                    <div class="text-sm text-gray-500">برای تمام موضوعات: تولد، عشق، تبلیغات، مهدکودک</div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl text-center">
+                    <div class="text-5xl mb-4">🎬</div>
+                    <h4 class="text-2xl font-bold mb-3 text-gray-800">کلیپ با هوش مصنوعی</h4>
+                    <p class="text-gray-600 mb-4">ساخت کلیپ یک دقیقه‌ای با تصاویر و انیمیشن‌های هوش مصنوعی</p>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">۷۵۰,۰۰۰ تومان</div>
+                    <div class="text-sm text-gray-500">برای تمام موضوعات: تولد، عشق، تبلیغات، مهدکودک</div>
+                </div>
+                
+                <div class="card-hover bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl text-center border-4 border-yellow-400 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
+                        ۱۰۰ هزار تومان تخفیف!
+                    </div>
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h4 class="text-2xl font-bold mb-3 text-gray-800">پکیج کامل</h4>
+                    <p class="text-gray-600 mb-4">ترانه + موزیک با خواننده + کلیپ هوش مصنوعی</p>
+                    <div class="text-lg text-gray-500 line-through mb-1">۱,۵۰۰,۰۰۰ تومان</div>
+                    <div class="text-4xl font-bold text-green-600 mb-2">۱,۴۰۰,۰۰۰ تومان</div>
+                    <div class="text-sm text-gray-500">بهترین قیمت برای بسته کامل!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Samples Section -->
+    <section id="samples" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">نمونه کارهای ما</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-gradient-to-r from-purple-400 to-pink-400 h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-6xl mb-4">🎂</div>
+                            <p class="text-lg font-bold">تولد مبارک سارا</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">ترانه تولد یک دقیقه‌ای</h4>
+                        <p class="text-gray-600 mb-4">ترانه و موزیک شخصی‌سازی شده با نام فرد</p>
+                        <button class="w-full bg-purple-500 hover:bg-purple-600 text-white py-2 rounded-lg transition-colors">
+                            ▶️ پخش نمونه
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-gradient-to-r from-blue-400 to-cyan-400 h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-6xl mb-4">🏪</div>
+                            <p class="text-lg font-bold">کافه رویا</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">کلیپ تبلیغاتی یک دقیقه‌ای</h4>
+                        <p class="text-gray-600 mb-4">ترانه + کلیپ هوش مصنوعی برای کافه</p>
+                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg transition-colors">
+                            ▶️ پخش نمونه
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <div class="bg-gradient-to-r from-green-400 to-emerald-400 h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-6xl mb-4">🌈</div>
+                            <p class="text-lg font-bold">آهنگ کودکانه</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg mb-2">ترانه کودکانه یک دقیقه‌ای</h4>
+                        <p class="text-gray-600 mb-4">ترانه شاد و آموزشی با کلیپ رنگارنگ</p>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition-colors">
+                            ▶️ پخش نمونه
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-800">با ما در تماس باشید</h3>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Methods -->
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold mb-6 text-gray-800">راه‌های ارتباطی</h4>
+                        
+                        <a href="https://wa.me/989123456789" class="flex items-center p-4 bg-green-50 hover:bg-green-100 rounded-xl transition-colors card-hover">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white text-xl ml-4">
+                                📱
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800">واتساپ</div>
+                                <div class="text-gray-600">۰۹۱۲۳۴۵۶۷۸۹</div>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/ai_music_studio" class="flex items-center p-4 bg-pink-50 hover:bg-pink-100 rounded-xl transition-colors card-hover">
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white text-xl ml-4">
+                                📷
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800">اینستاگرام</div>
+                                <div class="text-gray-600">@ai_music_studio</div>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+989123456789" class="flex items-center p-4 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors card-hover">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white text-xl ml-4">
+                                📞
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800">تماس مستقیم</div>
+                                <div class="text-gray-600">۰۹۱۲۳۴۵۶۷۸۹</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 p-8 rounded-2xl">
+                        <h4 class="text-2xl font-bold mb-6 text-gray-800">پیام بگذارید</h4>
+                        <form class="space-y-4" onsubmit="handleFormSubmit(event)">
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">نام شما</label>
+                                <input type="text" class="w-full p-3 border border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none" placeholder="نام و نام خانوادگی" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">شماره تماس</label>
+                                <input type="tel" class="w-full p-3 border border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">نوع سفارش</label>
+                                <select class="w-full p-3 border border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none" required>
+                                    <option value="">انتخاب کنید</option>
+                                    <option value="music-only">فقط ترانه + موزیک با خواننده (۷۵۰ هزار تومان)</option>
+                                    <option value="video-only">فقط کلیپ هوش مصنوعی (۷۵۰ هزار تومان)</option>
+                                    <option value="complete-package">پکیج کامل - ترانه + کلیپ (۱,۴۰۰ هزار تومان)</option>
+                                    <option value="consultation">مشاوره و سوال</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2">توضیحات سفارش</label>
+                                <textarea class="w-full p-3 border border-gray-300 rounded-lg focus:border-purple-500 focus:outline-none h-24" placeholder="لطفاً جزئیات سفارش خود را بنویسید..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-3 rounded-lg font-bold text-lg transition-all">
+                                🚀 ارسال پیام
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-3 space-x-reverse mb-6">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                    <span class="text-2xl">🎵</span>
+                </div>
+                <div>
+                    <h5 class="text-xl font-bold">استودیو هوش مصنوعی</h5>
+                    <p class="text-sm opacity-90">موزیک و کلیپ در یک دقیقه</p>
+                </div>
+            </div>
+            <p class="text-lg mb-4">تمامی حقوق محفوظ است © ۱۴۰۳</p>
+            <p class="opacity-90">ساخته شده با ❤️ برای شما</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Sample play buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('پخش نمونه')) {
+                button.addEventListener('click', function() {
+                    const originalText = this.textContent;
+                    this.textContent = '⏸️ در حال پخش...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.disabled = false;
+                        alert('نمونه پخش شد! برای دریافت فایل کامل با ما تماس بگیرید.');
+                    }, 3000);
+                });
+            }
+        });
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const name = event.target.querySelector('input[type="text"]').value;
+            const phone = event.target.querySelector('input[type="tel"]').value;
+            const orderType = event.target.querySelector('select').value;
+            const description = event.target.querySelector('textarea').value;
+            
+            // Create WhatsApp message
+            const message = `سلام! 
+نام: ${name}
+شماره: ${phone}
+نوع سفارش: ${orderType}
+توضیحات: ${description}
+
+لطفاً در اسرع وقت با من تماس بگیرید.`;
+            
+            const whatsappUrl = `https://wa.me/989123456789?text=${encodeURIComponent(message)}`;
+            
+            // Show success message
+            alert('پیام شما آماده شد! الان به واتساپ منتقل می‌شوید.');
+            
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97c43f8b65b2376c',t:'MTc1NzM5NTM1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
